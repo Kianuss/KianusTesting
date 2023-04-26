@@ -18,5 +18,5 @@ function menu() {
             navbar.style.display = "none";
         }, 500); 
     }
-  };   
+  }   
 
