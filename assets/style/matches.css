@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.Page {
+    display: block;
+}
+
+.LEFT,
+.RIGHT {
+    width: 100vw;
+}
+
+.LEFT h2,
+.RIGHT h2 {
+    margin-left: 16px;
+}
+
+.Poules,
+.Brackets {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Poule,
+.Bracket {
+    background-color: rgb(201, 201, 201);
+    width: 90%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.Poule h3,
+.Bracket h3 {
+    padding: 16px;
+    padding-bottom: 0;
+    font-size: 24px;
+    margin: 0;
+}
+
+.BRACKET_TEAMS {
+    font-family: 'Oswald', sans-serif;
+    padding: 2px 16px;
+}
+
+.POULE_TEAMINFO {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (min-width: 1050px) {
+    .Page {
+        display: flex;
+    }
+
+    .LEFT {
+        width: 66vw;
+        padding: 32px;
+    }
+
+    .RIGHT {
+        width: 33vw;
+        padding: 32px;
+    }
+
+    .Poules,
+    .Brackets {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Poule,
+    .Bracket {
+        width: 48%;
+    }
+}

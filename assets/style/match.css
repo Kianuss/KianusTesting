@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Anton', sans-serif;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    margin: 4px;
+}
+
+.INFORMATION {
+    display: flex;
+}
+
+.Players {
+    margin: 32px;
+}
+
+.Speler {
+    font-size: 24px;
+}
+
+.GameID {
+    color: #868686;
+    margin: 0;
+    margin-left: 32px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 16px;
+}
+
+@media only screen and (min-width: 1050px) {
+    .Page {
+        display: flex;
+        gap: 32px;
+        margin: 32px;
+    }
+
+    .Team1,
+    .Team2 {
+        width: 265px;
+    }
+}

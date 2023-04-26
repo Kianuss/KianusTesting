@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+.Teams{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    
+}
+.CREATE{
+    background-color: #00bb00;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TopPart{
+    display: flex;
+    justify-content: space-between;
+    margin: 32px;
+}
+center{
+    width: 100%;
+}
+.Team{
+    background-color: #222222;
+    border-radius: 16px;
+    z-index: 1;
+    margin: 8px;
+    position: relative;
+}
+.TeamNaam{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    padding:16px;
+    padding-bottom: 0;
+    margin: 0;
+}
+.Speler{
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    color: white;
+    padding: 8px 16px;
+    margin: 0;
+}
+.TeamLogo{
+    height: 64px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+h2{
+    margin: 16px;
+}
+.Page{
+    margin-bottom: 32px;
+}
+@media only screen and (max-width: 1050px) {
+    .Team{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 1050px) {
+    .Team{
+        width: 40%;
+    }
+}

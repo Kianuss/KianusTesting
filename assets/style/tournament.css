@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    margin: 0;
+}
+
+
+h1, h2, h3{
+    font-family: 'Anton', sans-serif;
+}
+p, li, .TEAMNAME, .SCORE{
+    font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (max-width: 1050px) {
+    .LEFT{
+        margin: 16px;
+    }
+    .Description{
+        margin-bottom:16px;
+    }
+    .RIGHT{
+        margin: 16px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1050px) {
+    .Page{
+        display: flex;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .LEFT{
+        width: 66vw;
+        padding: 32px;
+    }
+    .RIGHT{
+        width: 33vw;
+        padding: 32px;
+    }
+    .Description{
+        margin-bottom: 32px;
+    }
+
+
+
+
+}

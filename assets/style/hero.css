@@ -1,0 +1,66 @@
+.HERO {
+    width: 100%;
+    background-color: #f4e4bc;
+    color: white;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.HERO p {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Anton', sans-serif;
+}
+
+@media only screen and (min-width: 1050px) {
+    .HERO {
+        height: 40vh;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .HERO h1 {
+        font-size: 64px;
+    }
+
+    .HERO img {
+        height: 60%;
+    }
+
+    .HERO p {
+        background-color: #222222;
+        padding: 16px 32px;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .HERO img {
+        display: none;
+    }
+
+    .HERO {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .HERO h1 {
+        width: 100vw;
+        text-align: center;
+        align-self: center;
+        font-size: 64px;
+    }
+
+    .HERO p {
+        font-size: 20px;
+    }
+}

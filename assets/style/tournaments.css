@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+.CREATE{
+    background-color: #00bb00;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.Projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    padding: 16px;
+}
+.Project{
+    width: 400px;
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    position: relative;
+    margin: 8px;
+}
+.Project h2{
+    position: absolute;
+    bottom: 4px;
+    color: white;
+    margin: 0;
+    left: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+@media only screen and (max-width: 1050px) and (min-width: 768px){
+    .SITE{
+        width: 100vw;
+        
+    }
+    .Project{
+        width: 40vw;
+        z-index: -1;
+    }
+    .Projects{
+        justify-content: center;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .SITE{
+        width: 100vw;
+        
+    }
+    .Project{
+        width: 90vw;
+        z-index: -1;
+    }
+    .Projects{
+        justify-content: center;
+        padding: 0;
+    }
+}

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.NAV_BAR_MENU li{
+    list-style-type: none;
+}
+nav a{
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+.NAV_BAR{
+    top: 0;
+    width: 100%;
+    color: white;
+    position:sticky;
+    z-index: 5;
+}
+a{
+    text-decoration: none;
+}
+html, body{
+    margin: 0;
+}
+
+
+
+
+@media only screen and (min-width: 1050px) {
+    .NAV_BAR_MENU li{
+        float: Left;
+    }
+    .NAV_BAR .checkbox,.hamburger-lines{
+        display: none;
+    }
+    .NAV_BAR{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(0px);
+        height: 80px;
+        background-color: #000000DD;
+        backdrop-filter: blur(10px);
+    }
+
+    .NAV_BAR_LOGO{
+      display: flex;
+      align-items: center;
+      height: 52px;
+      margin: 8px;
+      padding-right: 8px;
+  }
+.NAV_BAR_LOGO img{
+  cursor: pointer;
+  height: 52px;
+  margin: 16px;
+  
+}
+    nav{
+        padding-right: 32px;
+    }
+    nav a{
+        font-size: 24px;
+        margin: 8px;
+        margin-left: 32px;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+  .NAV_BAR_LOGO h1{
+      display: none;
+  }
+  .NAV_BAR_LOGO .WEBSITE_TITLE{
+    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    padding-right: 8px;
+  }
+}
+@media only screen and (max-width: 1050px)  {
+nav a{
+    font-size: 24px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.NAV_BAR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0px);
+    background-color: #222222;
+    height: 80px;
+    backdrop-filter: blur(10px);
+    z-index:5;
+    top:0;
+}
+.NAV_BAR_LOGO img{
+  height: 40px;
+  margin: 8px;
+}
+.NAV_BAR_MENU{
+    position: fixed;
+    z-index: 5;
+    top: 79px;
+    width: 100%;
+    background-color: #222222;
+    backdrop-filter: blur(30px);
+    height: 0;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+.NAV_BAR_MENU li{
+    text-align: center;
+    padding-top: 32px;
+}
+.NAV_BAR .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 24px;
+    right: 24px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .NAV_BAR .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .NAV_BAR .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .NAV_BAR .hamburger-lines .line1 {
+    transform-origin: 100% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .NAV_BAR .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .NAV_BAR .hamburger-lines .line3 {
+    transform-origin: 100% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .NAV_BAR input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .NAV_BAR input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(-45deg);
+  }
+  
+  .NAV_BAR input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .NAV_BAR input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(45deg);
+  }
+  
+  .NAV_BAR input[type="checkbox"]:checked ~ .NAV_BAR_MENU{
+    height: calc(100vh - 80px);
+  }
+  .NAV_BAR nav{
+    display: none;
+    transition-duration: 500ms;
+    opacity: 0%;
+  }
+}
+

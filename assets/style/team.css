@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+h1, h2, h3, h4{
+    font-family: 'Anton', sans-serif;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+    margin: 4px;
+}
+
+.INFORMATION{
+    display: flex;
+}
+
+.Players{
+    margin: 32px;
+    
+}
+.Speler{
+    font-size: 24px;
+}
+
+.GameID{
+    color: #868686;
+    margin: 0;
+    margin-left: 32px;
+}
+.UPCOMING_MATCH{
+    background-color: #222222;
+    color: white;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+}
+.UPCOMING_MATCH_PARTICIPANTS{
+    justify-content: center;
+}
+.UPCOMING_MATCH *{
+    margin: 0;
+}
+.UPCOMING_MATCH_PARTICIPANTS, .UPCOMING_MATCH_INFORMATION{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    gap: 8px;
+}
+.SCORE{
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+.SCORE#WON{
+    background-color: #00d439;
+}
+.SCORE#LOST{
+    background-color: #ff0000;
+}
+.UPCOMING_MATCH_INFORMATION{
+    justify-content: space-between;
+    padding: 16px;
+}
+.UPCOMING_MATCH_INFORMATION p{
+    margin: 0;
+}
+.FINISHED_MATCH_SCORE{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+}
+.STREAM{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    height: 32px;
+}
+
+.UPCOMING_MATCH h3{
+    padding: 16px;
+    
+}
+.UPCOMING_MATCH{
+    margin: 16px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1050px) {
+    .LEFT{
+        margin: 16px;
+    }
+    .Description{
+        margin-bottom:16px;
+    }
+    .RIGHT{
+        margin: 16px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1050px) {
+    .LEFT{
+        width: 66vw;
+        padding: 32px;
+    }
+    .RIGHT{
+        width: 33vw;
+        padding: 32px;
+    }
+    .Page{
+        display: flex;
+    }
+
+
+
+
+}

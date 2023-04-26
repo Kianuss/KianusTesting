@@ -1,0 +1,22 @@
+a{
+    color: black;
+}
+.Buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Button{
+    aspect-ratio: 1/1;
+    background-color: #aaaaaa;
+    width: 18%;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.Button h2{
+    font-size: 24px;
+    text-align: center;
+}

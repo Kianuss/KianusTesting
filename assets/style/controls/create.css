@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+.Creation{
+    display: flex;
+    justify-content: center;
+    margin-top:80px;
+    font-family: 'Oswald', sans-serif;
+}
+form{
+    background-color: #cccccc;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 16px;
+}
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%
+}
+.submit{
+    border: 0;
+    background-color: #00cc00;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 8px;
+    border-radius: 8px;
+}

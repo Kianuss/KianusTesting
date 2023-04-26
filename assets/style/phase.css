@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+/* Algemene stijlen */
+.Page {
+    display: block;
+}
+.LEFT, .RIGHT {
+    width: 100vw;
+}
+.LEFT h2, .RIGHT h2{
+    margin-left: 16px;
+}
+
+.Poules {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Poule {
+    background-color: rgb(201, 201, 201);
+    width: 90%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.Poule h3 {
+    padding: 16px;
+    font-size: 24px;
+}
+.POULE_TEAMINFO {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 16px;
+    font-family: 'Oswald', sans-serif;
+}
+table{
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    text-align: center;
+}
+td, th{
+    width: 16%;
+}
+
+
+/* Mediaquery voor schermen groter dan 1050px */
+@media only screen and (min-width: 1050px) {
+    .Page {
+        display: flex;
+    }
+    .LEFT {
+        width: 66vw;
+        padding: 32px;
+    }
+    .RIGHT {
+        width: 33vw;
+        padding: 32px;
+    }
+    .Poules {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .Bracket{
+        display: flex;
+        align-items: center;
+        width: 90vw;
+        height: 100%;
+    }
+    .Round{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: inherit;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .LEFT{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .Bracket{
+        width: 90vw;
+    }
+}
